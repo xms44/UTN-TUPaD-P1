@@ -1,112 +1,112 @@
 # /// Ejercicio 1 / Crear una lista con múltiplos de 4 del 1 al 100 ///
 
-#Lista usando range con inicio en 4, fin en 101 y salto de 4
+# Lista de múltiplos de 4 usando range
 lista_multiplos_4 = list(range(4, 101, 4))
 
-#Muestra la lista resultante
+# Imprime la lista
 print(lista_multiplos_4)
 
 # /// Ejercicio 2 / Crear una lista con cinco elementos y mostrar el penúltimo ///
 
-#Lista con cinco elementos
+# Lista con cosas que me gustan
 cosas_que_me_gustan = ["pizza", "juegos", "playa", "perros", "fútbol"]
 
-#Muestra el penúltimo elemento usando índice negativo
+# Muestra el penúltimo elemento
 print(cosas_que_me_gustan[-2])
 
 # /// Ejercicio 3 / Crear una lista vacía, agregar tres palabras con append e imprimirla ///
 
-#Lista vacía
+# Lista vacía
 lista_vacia = []
 
-#Agrego tres palabras con append
+# Agrega tres palabras
 lista_vacia.append("sol")
 lista_vacia.append("escritorio")
 lista_vacia.append("impresora")
 
-#Imprime la lista resultante
+# Muestra la lista
 print(lista_vacia)
 
 # /// Ejercicio 4 / Reemplazar el segundo y último valor de la lista “animales” ///
 
-#Lista original
+# Lista de animales
 animales = ["perro", "gato", "conejo", "pez"]
 
-#Reemplaza el segundo valor por "loro"
+# Cambia el segundo por "loro"
 animales[1] = "loro"
 
-#Reemplaza el último valor por "oso"
+# Cambia el último por "oso"
 animales[-1] = "oso"
 
-#Muestra la lista resultante
+# Imprime la lista
 print(animales)
 
-# /// Ejercicio 5 / Explicación: este código elimina el número más grande de la lista "numeros" y luego imprime la lista actualizada ///
+# /// Ejercicio 5 / Eliminar el número más grande de la lista ///
 
-#Define una lista de números
+# Lista de números
 numeros = [8, 15, 3, 22, 7]
 
-#Elimina el valor máximo de la lista
+# Elimina el máximo
 numeros.remove(max(numeros))
 
-#Muestra la lista resultante sin el número mayor
+# Imprime la lista sin el mayor
 print(numeros)
 
 # /// Ejercicio 6 / Crear lista con números del 10 al 30 con saltos de 5 y mostrar los dos primeros ///
 
-#Lista con números del 10 al 30 inclusive, saltando de 5 en 5
+# Lista del 10 al 30 saltando de 5
 numeros = list(range(10, 31, 5))
 
-#Imprime los dos primeros elementos de la lista
+# Imprime los dos primeros
 print(numeros[0])
 print(numeros[1])
 
 # /// Ejercicio 7 / Reemplazar los valores centrales de la lista autos ///
 
-#La lista original con cuatro elementos
+# Lista de autos
 autos = ["sedan", "polo", "suran", "gol"]
 
-#Reemplaza los valores en los índices 1 y 2
+# Cambia el segundo y el tercero
 autos[1] = "cruze"
 autos[2] = "yaris"
 
-#Imprime la lista actualizada
+# Muestra la lista actualizada
 print(autos)
 
 # /// Ejercicio 8 / Crear una lista con los dobles de 5, 10 y 15 usando append ///
 
-#Lista vacía
+# Lista vacía
 dobles = []
 
-#Agrega los dobles directamente con append
+# Agrega los dobles
 dobles.append(5 * 2)
 dobles.append(10 * 2)
 dobles.append(15 * 2)
 
-#Imprime la lista resultante
+# Muestra la lista
 print(dobles)
 
 # /// Ejercicio 9 / Listas con productos de compras ///
 
-#Lista de compras por cliente
+# Lista de compras por cliente
 compras = [["pan", "leche"], ["arroz", "fideos", "salsa"], ["agua"]]
 
-#Agrega "jugo" a la lista del tercer cliente
+# Agrega "jugo" al tercer cliente
 compras[2].append("jugo")
 
-#Reemplaza "fideos" por "tallarines" en la lista del segundo cliente
+# Cambia "fideos" por "tallarines" en el segundo cliente
 compras[1][1] = "tallarines"
 
-#Elimina "pan" de la lista del primer cliente
+# Elimina "pan" del primer cliente
 compras[0].remove("pan")
 
-#Imprime la lista resultante
+# Muestra la lista
 print(compras)
 
 # /// Ejercicio 10 / Crear una lista anidada con distintos elementos ///
 
-#Lista anidada con los elementos especificados
+# Lista anidada
 lista_anidada = [15, True, [25.5, 57.9, 30.6], False]
 
-#Imprime la lista resultante
+# Muestra la lista
 print(lista_anidada)
