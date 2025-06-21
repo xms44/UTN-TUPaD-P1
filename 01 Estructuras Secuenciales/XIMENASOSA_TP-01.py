@@ -1,64 +1,85 @@
-# Actividad 1
+# /// Ejercicio 1 ///
+# Imprime "Hola Mundo!" en pantalla
+
 print("Hola Mundo!")
 
-# Actividad 2
-nombre = input("¿Cuál es tu nombre? ")
+# /// Ejercicio 2 ///
+# Pide el nombre y saluda
+
+nombre = input("Ingrese su nombre: ")
 print(f"Hola {nombre}!")
 
-# Actividad 3
-nombre = input("Cuál es tu nombre? ")
-apellido = input("Cuál es tu apellido? ")
-edad = input("Cuál es tu edad? ")
-residencia = input("Dónde vivís? ")
+# /// Ejercicio 3 ///
+# Pide nombre, apellido, edad y lugar, y lo muestra en una frase
+
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+edad = input("Ingrese su edad: ")
+residencia = input("¿Dónde vivís?: ")
 print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
 
-# Actividad 4
-import math
-radio = float(input("Ingresa el radio del circulo: "))
-area = math.pi * radio ** 2
-perimetro = 2 * math.pi * radio
-print(f"Área: {area:.2f}")
-print(f"Perímetro: {perimetro:.2f}")
+# /// Ejercicio 4 ///
+# Pide radio y muestra área y perímetro de un círculo
 
-# Actividad 5
-segundos = int(input("Ingresa la cantidad de segundos: "))
+radio = float(input("Ingrese el radio del círculo: "))
+area = 3.14 * radio ** 2
+perimetro = 2 * 3.14 * radio
+print(f"Área: {area}")
+print(f"Perímetro: {perimetro}")
+
+# /// Ejercicio 5 ///
+# Pide segundos y muestra cuántas horas representa
+
+segundos = int(input("Ingrese cantidad de segundos: "))
 horas = segundos / 3600
-print(f"Equivale a {horas:.2f} horas")
+print(f"{segundos} segundos equivalen a {horas} horas")
 
-# Actividad 6
-numero = int(input("Ingresa un número: "))
-print(f"Tabla de multiplicar del {numero}:")
-for i in range(1, 11):
-    print(f"{numero} x {i} = {numero * i}")
+# /// Ejercicio 6 ///
+# Pide un número y muestra su tabla de multiplicar del 1 al 10
 
-# Actividad 7
-num1 = int(input("Ingresa el primer número (distinto de 0): "))
-num2 = int(input("Ingresa el segundo número (distinto de 0): "))
-#
-suma = num1 + num2
-resta = num1 - num2
-multiplicacion = num1 * num2
-division = num1 / num2
-#
-print(f"Suma: {suma}")
-print(f"Resta: {resta}")
-print(f"Multiplicación: {multiplicacion}")
-print(f"División: {division:.2f}")
+numero = int(input("Ingrese un número: "))
+print("Tabla del", numero)
+print(numero * 1)
+print(numero * 2)
+print(numero * 3)
+print(numero * 4)
+print(numero * 5)
+print(numero * 6)
+print(numero * 7)
+print(numero * 8)
+print(numero * 9)
+print(numero * 10)
 
-# Actividad 8
-peso = float(input("Ingresa tu peso en kilogramos: "))
-altura = float(input("Ingresa tu altura en metros: "))
-bmi = peso / (altura ** 2)
-print(f"Tu índice de masa corporal es: {bmi:.2f}")
+# /// Ejercicio 7 ///
+# Pide dos enteros distintos de 0 y muestra suma, resta, multiplicación y división
 
-# Actividad 9
-celsius = float(input("Ingresa la temperatura en grados Celsius: "))
-fahrenheit = (9 / 5) * celsius + 32
-print(f"{celsius}°C equivalen a {fahrenheit:.2f}°F")
+num1 = int(input("Ingrese un número entero (distinto de 0): "))
+num2 = int(input("Ingrese otro número entero (distinto de 0): "))
+print(f"Suma: {num1 + num2}")
+print(f"Resta: {num1 - num2}")
+print(f"Multiplicación: {num1 * num2}")
+print(f"División: {num1 / num2}")
 
-# Actividad 10
-num1 = float(input("Ingresa el primer número: "))
-num2 = float(input("Ingresa el segundo número: "))
-num3 = float(input("Ingresa el tercer número: "))
-promedio = (num1 + num2 + num3) / 3
-print(f"El promedio de los tres números es: {promedio:.2f}")
+# /// Ejercicio 8 ///
+# Pide altura y peso, y muestra el índice de masa corporal (IMC)
+
+peso = float(input("Ingrese su peso en kg: "))
+altura = float(input("Ingrese su altura en metros: "))
+imc = peso / altura ** 2
+print(f"Su IMC es {imc}")
+
+# /// Ejercicio 9 ///
+# Pide temperatura en Celsius y la muestra en Fahrenheit
+
+celsius = float(input("Ingrese temperatura en grados Celsius: "))
+fahrenheit = (9/5) * celsius + 32
+print(f"{celsius}°C equivale a {fahrenheit}°F")
+
+# /// Ejercicio 10 ///
+# Pide tres números y muestra el promedio
+
+n1 = float(input("Ingrese el primer número: "))
+n2 = float(input("Ingrese el segundo número: "))
+n3 = float(input("Ingrese el tercer número: "))
+promedio = (n1 + n2 + n3) / 3
+print(f"El promedio es {promedio}")
